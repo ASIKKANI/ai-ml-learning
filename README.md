@@ -1,93 +1,109 @@
-1.Logistic Regression – Binary Classification Practice
-Overview
+# Machine Learning Learning Projects
 
-This repository contains a simple machine learning notebook created while learning Logistic Regression.
-The goal of this project is to understand the end-to-end ML workflow for a binary classification problem, including preprocessing, model training, and evaluation.
+## Overview
 
-This is a learning-focused exercise, not a production or medical diagnostic system.
+This repository contains a collection of **learning-focused machine learning projects** created while studying ML fundamentals.
+Each project is implemented with the goal of understanding both **practical workflows** and **core mathematical concepts**, ranging from library-based models to from-scratch implementations.
 
-Dataset
+These projects are for **educational purposes only**, not production or domain-specific diagnostic use.
 
-Breast Cancer Wisconsin (Diagnostic) Dataset
+---
 
-Publicly available dataset commonly used for practicing binary classification
+## Project 1: Logistic Regression – Binary Classification
 
-Target variable: diagnosis
+### Description
 
-1 → Malignant
+This project focuses on learning **Logistic Regression** using a standard machine learning workflow with Scikit-learn.
+It demonstrates how a binary classification problem is handled end-to-end, including preprocessing, model training, and evaluation.
 
-0 → Benign
+### Dataset
 
-Objective
+**Breast Cancer Wisconsin (Diagnostic) Dataset**
 
-Learn how Logistic Regression works in practice
+- Publicly available dataset for binary classification
+- Target variable: `diagnosis`
+  - `1` → Malignant
+  - `0` → Benign
 
-Apply standard preprocessing steps
+### Objectives
 
-Train and evaluate a binary classification model
+- Understand Logistic Regression in practice
+- Apply standard preprocessing techniques
+- Train and evaluate a binary classification model
+- Interpret model outputs
 
-Understand model behavior and outputs
+### Workflow
 
-Workflow
+1. Load and inspect the dataset  
+2. Remove irrelevant columns  
+3. Encode categorical labels  
+4. Scale numerical features  
+5. Split data into training and testing sets  
+6. Train a Logistic Regression model  
+7. Evaluate performance using accuracy  
 
-Load and inspect the dataset
+### Model Used
 
-Remove irrelevant columns
+- Logistic Regression (Scikit-learn)
 
-Encode categorical labels
+### Notes
 
-Scale numerical features
+- Built as part of learning ML fundamentals
+- No advanced hyperparameter tuning or cross-validation
+- No medical or diagnostic claims are made
 
-Split data into training and testing sets
+---
 
-Train a Logistic Regression model
+## Project 2: Multiple Linear Regression – From Scratch (NumPy)
 
-Evaluate model performance using accuracy
+### Description
 
-Model Used
+This project implements **Multiple Linear Regression from scratch** using NumPy, without relying on machine learning libraries.
+The goal is to understand the **mathematics behind regression**, including cost computation and gradient descent optimization.
 
-Logistic Regression (Scikit-learn)
+### Objectives
 
-Chosen for:
+- Implement linear regression manually
+- Understand cost functions and gradients
+- Apply gradient descent for parameter optimization
+- Gain intuition about model convergence
 
-Simplicity
+### Key Concepts Implemented
 
-Interpretability
+- Linear hypothesis: `h(x) = X·w + b`
+- Mean Squared Error (MSE) cost function
+- Gradient computation for weights and bias
+- Gradient descent optimization loop
 
-Suitability for binary classification
+### Implementation Details
 
-Results
+- Weights and bias initialized manually
+- Gradients computed using explicit loops for clarity
+- Parameter updates performed using gradient descent
 
-The model achieves reasonable accuracy on the test set.
+### Tools Used
 
-This result is intended to validate understanding of Logistic Regression rather than optimize performance.
+- Python
+- NumPy
+- Matplotlib (for visualization, if used)
 
-Tools & Libraries
+### Notes
 
-Python
+- Focused on conceptual clarity over performance
+- No vectorized or library-optimized shortcuts used
+- Designed strictly as a learning exercise
 
-Pandas
+---
 
-NumPy
+## Future Projects
 
-Scikit-learn
+- Logistic Regression from scratch
+- Regularized Linear Regression
+- Gradient Descent visualization
+- Model comparison (from-scratch vs Scikit-learn)
 
-Matplotlib / Seaborn (if used)
+---
 
-Notes
+## Author
 
-This project was built as part of learning machine learning fundamentals.
-
-No advanced tuning, cross-validation, or medical claims are made.
-
-Future improvements could include:
-
-Additional evaluation metrics
-
-Feature importance analysis
-
-Regularization experiments
-
-Author
-
-P Asik Kani
+**P Asik Kani**
