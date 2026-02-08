@@ -10,7 +10,7 @@ These projects are for **educational purposes only**, not production or domain-s
 ---
 
 ## Project 1: Logistic Regression – Binary Classification
-
+ 
 ### Description
 
 This project focuses on learning **Logistic Regression** using a standard machine learning workflow with Scikit-learn.
